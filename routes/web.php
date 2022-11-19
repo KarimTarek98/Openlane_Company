@@ -42,8 +42,4 @@ Route::controller(ServiceController::class)->group(function () {
     Route::get('/service-details/{id}', 'serviceDetails')->name('service.details');
 });
 
-Route::get('/dashboard', function () {
-    return view('admin.index');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
 require __DIR__.'/auth.php';

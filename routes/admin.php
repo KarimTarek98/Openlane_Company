@@ -12,7 +12,11 @@ use App\Http\Controllers\Home\PortofolioController;
 use App\Http\Controllers\Home\ServiceController;
 use Illuminate\Support\Facades\Route;
 
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['verified', 'admin'])->group(function () {
+
+    Route::get('/dashboard', function () {
+        return view('admin.index');
+    })->name('dashboard');
 
     // Admin Routes
 Route::prefix('admin')->group(function () {
