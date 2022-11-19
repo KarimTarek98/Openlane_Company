@@ -12,8 +12,8 @@ class BannerController extends Controller
 {
     public function index()
     {
+        $this->authorize('edit_banner');
         $bannerInfo = HomeBanner::find(1);
-        //return $bannerInfo;
         return view('admin.home.edit_banner', compact('bannerInfo'));
     }
 

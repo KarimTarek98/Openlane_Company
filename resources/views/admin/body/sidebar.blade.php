@@ -32,8 +32,13 @@
                         <span>Home</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
+                        @can('edit_banner')
                         <li><a href="{{ route('edit.banner') }}">Banner</a></li>
+                        @endcan
+                        @can('edit_about')
                         <li><a href="{{ route('edit.about') }}">About</a></li>
+                        @endcan
+
                         <li><a href="{{ route('about.multi_image') }}">About Icons</a></li>
                         <li><a href="{{ route('about.view_multi_icons') }}">View About Multi Icons</a></li>
                     </ul>

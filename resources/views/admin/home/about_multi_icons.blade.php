@@ -60,6 +60,7 @@
                                                     alt="icon">
                                             </td>
                                             <td>
+                                                @can('store_icons')
                                                 <a href="{{ route('about.edit_icon', $icon->id) }}" class="btn btn-info"
                                                     title="Edit Image">
                                                     <i class="fas fa-edit"></i>
@@ -68,6 +69,7 @@
                                                     title="Delete Image" id="delete">
                                                     <i class=" far fa-trash-alt"></i>
                                                 </a>
+                                                @endcan
                                             </td>
                                         </tr>
                                     @endforeach
