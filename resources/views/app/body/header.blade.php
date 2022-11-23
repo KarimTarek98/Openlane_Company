@@ -37,7 +37,7 @@
                     <div class="mobile__menu">
                         <nav class="menu__box">
                             <div class="close__btn"><i class="fal fa-times"></i></div>
-                            
+
                             <div class="menu__outer">
                                 <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
                             </div>

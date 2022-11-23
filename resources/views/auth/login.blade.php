@@ -59,8 +59,8 @@
                             @csrf
                             <div class="form-group mb-3 row">
                                 <div class="col-12">
-                                    <input class="form-control" name="username" id="username" type="text"
-                                        required="" autofocus placeholder="Username" value="{{ old('username') }}">
+                                    <input class="form-control" name="email" id="email" type="text"
+                                        required="" autofocus placeholder="Email" value="{{ old('email') }}">
                                 </div>
                             </div>
 
